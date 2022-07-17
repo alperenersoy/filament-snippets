@@ -1,0 +1,26 @@
+{
+    "name": "filament-snippets",
+    "displayName": "Filament Snippets",
+    "description": "Snippets for filament admin panel.",
+    "version": "0.0.1",
+    "publisher": "alperenersoy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alperenersoy/filament-snippets"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/form-builder.json"
+            }
+        ]
+    }
+}

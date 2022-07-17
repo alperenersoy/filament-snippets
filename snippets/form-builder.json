@@ -1,0 +1,570 @@
+{
+    //Form Components
+    //Text Inputs
+    "Filament Text Input": {
+        "prefix": [
+            "textinput",
+            "ti",
+            "it"
+        ],
+        "body": [
+            "TextInput::make('$1')$0,"
+        ],
+        "description": "Text input for form builder."
+    },
+    "Filament Text Input with Mask": {
+        "prefix": [
+            "textinputmask",
+            "tim",
+            "itm"
+        ],
+        "body": [
+            "TextInput::make('$1')",
+            "\t->mask(fn (TextInput\\Mask \\$mask) => \\$mask->pattern('${2:(000)000-00-00}'))$0,"
+        ],
+        "description": "Text input with mask for form builder."
+    },
+    "Filament Email Text Input": {
+        "prefix": [
+            "emailinput",
+            "ei",
+            "ie"
+        ],
+        "body": [
+            "TextInput::make('${1:email}')",
+            "\t->email()$0,"
+        ],
+        "description": "Email input for form builder."
+    },
+    "Filament Numeric Text Input": {
+        "prefix": [
+            "numericinput",
+            "ni",
+            "in"
+        ],
+        "body": [
+            "TextInput::make('$1')",
+            "\t->numeric()$0,"
+        ],
+        "description": "Numeric input for form builder."
+    },
+    "Filament Password Text Input": {
+        "prefix": [
+            "passwordinput",
+            "password",
+            "pi",
+            "ip"
+        ],
+        "body": [
+            "TextInput::make('${1:password}')",
+            "\t->password()$0,"
+        ],
+        "description": "Password input for form builder."
+    },
+    "Filament Tel Text Input": {
+        "prefix": [
+            "telinput",
+            "tel",
+            "teli",
+            "itel"
+        ],
+        "body": [
+            "TextInput::make('${1:tel}')",
+            "\t->tel()$0,"
+        ],
+        "description": "Telephone number input for form builder."
+    },
+    "Filament URL Text Input": {
+        "prefix": [
+            "inputurl",
+            "url",
+            "ui",
+            "iu"
+        ],
+        "body": [
+            "TextInput::make('${1:url}')",
+            "\t->url()$0,"
+        ],
+        "description": "URL input for form builder."
+    },
+    //Text Inputs
+    //Select
+    "Filament Select Input": {
+        "prefix": [
+            "select",
+            "inputselect",
+            "si",
+            "is"
+        ],
+        "body": [
+            "Select::make('${1}')",
+            "\t->options(${2:[\n\t\t$0\n\t]}),"
+        ],
+        "description": "Select input with options for form builder."
+    },
+    "Filament Select Input with Relationship": {
+        "prefix": [
+            "belongstoselect",
+            "inputbelongstoselect",
+            "selectrelationship",
+            "relationshipselect",
+            "bts",
+            "ibts",
+            "sr",
+            "rs"
+        ],
+        "body": [
+            "Select::make('${1}')",
+            "\t->relationship('$2', '$3')$0,"
+        ],
+        "description": "Select input with options for form builder."
+    },
+    "Filament Select Input with Multiple": {
+        "prefix": [
+            "multiselect",
+            "inputmultiselect",
+            "selectmultiple",
+            "multipleselect",
+            "sm",
+            "ms"
+        ],
+        "body": [
+            "Select::make('${1}')",
+            "\t->multiple()$0,"
+        ],
+        "description": "Multiple select input for form builder."
+    },
+    //Select
+    //Checkbox
+    "Filament Checkbox Input": {
+        "prefix": [
+            "checkbox",
+            "inputcheckbox",
+            "ci",
+            "ic"
+        ],
+        "body": [
+            "Checkbox::make('${1}')$0,"
+        ],
+        "description": "Checkbox input for form builder."
+    },
+    //Checkbox
+    //Toggle
+    "Filament Toggle Input": {
+        "prefix": [
+            "toggle",
+            "inputtoggle",
+            "ti",
+            "it"
+        ],
+        "body": [
+            "Toggle::make('${1}')$0,"
+        ],
+        "description": "Toggle input for form builder."
+    },
+    //Toggle
+    //Checkbox List
+    "Filament Checkbox List Input": {
+        "prefix": [
+            "checkboxlist",
+            "inputcheckboxlist",
+            "cli",
+            "icl"
+        ],
+        "body": [
+            "CheckboxList::make('${1}')",
+            "\t->options(${2:[\n\t\t$0\n\t]}),"
+        ],
+        "description": "Checkbox list input for form builder."
+    },
+    "Filament Checkbox List Input with Relationship": {
+        "prefix": [
+            "checkboxlistrelationship",
+            "inputcheckboxlistrelationship",
+            "clir",
+            "iclr"
+        ],
+        "body": [
+            "CheckboxList::make('${1}')",
+            "\t->relationship('$2', '$3')$0,"
+        ],
+        "description": "Checkbox list input for form builder."
+    },
+    //Checkbox List
+    //Radio
+    "Filament Radio Input": {
+        "prefix": [
+            "radio",
+            "inputradio",
+            "ir",
+            "ri"
+        ],
+        "body": [
+            "Radio::make('${1}')",
+            "\t->options(${2:[\n\t\t$0\n\t]}),"
+        ],
+        "description": "Radio input for form builder."
+    },
+    "Filament Boolean Radio Input": {
+        "prefix": [
+            "radiobool",
+            "inputradiobool",
+            "irb",
+            "rib"
+        ],
+        "body": [
+            "Radio::make('${1}')${2:",
+            "\t->label('${3:You may insert a question here.}')}",
+            "\t->boolean(),"
+        ],
+        "description": "Radio input with yes and no options for form builder."
+    },
+    //Radio
+    //Date Time Pickers
+    "Filament Date Time Picker Input": {
+        "prefix": [
+            "datetimepicker",
+            "inputdatetimepicker",
+            "dtpi",
+            "idtp"
+        ],
+        "body": [
+            "DateTimePicker::make('$1')$0,"
+        ],
+        "description": "Date Time Picker input for form builder."
+    },
+    "Filament Date Picker Input": {
+        "prefix": [
+            "datepicker",
+            "inputdatepicker",
+            "dpi",
+            "idp"
+        ],
+        "body": [
+            "DatePicker::make('$1')$0,"
+        ],
+        "description": "Date Picker input for form builder."
+    },
+    "Filament Time Picker Input": {
+        "prefix": [
+            "timepicker",
+            "inputtimepicker",
+            "tpi",
+            "itp"
+        ],
+        "body": [
+            "TimePicker::make('$1')$0,"
+        ],
+        "description": "Time Picker input for form builder."
+    },
+    //Date Time Pickers
+    //File Uploads
+    "Filament File Upload Input": {
+        "prefix": [
+            "fileupload",
+            "inputfileupload",
+            "fui",
+            "ifu"
+        ],
+        "body": [
+            "FileUpload::make('$1')$0,"
+        ],
+        "description": "File upload input for form builder."
+    },
+    "Filament File Upload Input with Directory": {
+        "prefix": [
+            "fileuploaddirectory",
+            "inputfileuploaddirectory",
+            "fuid",
+            "ifud"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->directory('$2')$0,"
+        ],
+        "description": "File upload input with directory definition for form builder."
+    },
+    "Filament Multiple File Upload Input": {
+        "prefix": [
+            "multiplefileupload",
+            "fileuploadmultiple",
+            "inputfileuploadmultiple",
+            "mfui",
+            "imfu",
+            "fumi",
+            "ifum"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->multiple()$0,"
+        ],
+        "description": "Multiple file upload input for form builder."
+    },
+    "Filament Multiple File Upload Input with Directory": {
+        "prefix": [
+            "multiplefileuploaddirectory",
+            "fileuploadmultipledirectory",
+            "inputfileuploadmultipledirectory",
+            "mfuid",
+            "imfud",
+            "fumid",
+            "ifumd"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->multiple()",
+            "\t->directory('$2')$0,"
+        ],
+        "description": "Multiple file upload input with directory definition for form builder."
+    },
+    "Filament Image Upload Input": {
+        "prefix": [
+            "fileuploadimage",
+            "imageupload",
+            "inputimageupload",
+            "ifui",
+            "fuii",
+            "iui",
+            "iiu"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->image()$0,"
+        ],
+        "description": "Image upload input for form builder."
+    },
+    "Filament Image Upload Input with Directory": {
+        "prefix": [
+            "fileuploadimagedirectory",
+            "imageuploaddirectory",
+            "inputimageuploaddirectory",
+            "ifuid",
+            "fuiid",
+            "iuid",
+            "iiud"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->image()",
+            "\t->directory('$2')$0,"
+        ],
+        "description": "Image upload input with directory definition for form builder."
+    },
+    "Filament Avatar Upload Input": {
+        "prefix": [
+            "fileuploadavatar",
+            "avatarupload",
+            "inputavatarupload",
+            "ifua",
+            "fuia",
+            "iua",
+            "iau"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->avatar()$0,"
+        ],
+        "description": "Avatar upload input for form builder."
+    },
+    "Filament Avatar Upload Input with Directory": {
+        "prefix": [
+            "fileuploadavatardirectory",
+            "avataruploaddirectory",
+            "inputavataruploaddirectory",
+            "ifuad",
+            "fuiad",
+            "iuad",
+            "iaud"
+        ],
+        "body": [
+            "FileUpload::make('$1')",
+            "\t->avatar()",
+            "\t->directory('$2')$0,"
+        ],
+        "description": "Avatar upload input with directory definition for form builder."
+    },
+    //File Uploads
+    //Rich Editor
+    "Filament Rich Editor Input": {
+        "prefix": [
+            "richeditor",
+            "inputricheditor",
+            "rei",
+            "iri"
+        ],
+        "body": [
+            "RichEditor::make('$1')$0,"
+        ],
+        "description": "Rich text editor input for form builder."
+    },
+    //Rich Editor
+    //Markdown Editor
+    "Filament Markdown Editor Input": {
+        "prefix": [
+            "markdowneditor",
+            "inputmarkdowneditor",
+            "mei",
+            "ime",
+            "mdei",
+            "imde"
+        ],
+        "body": [
+            "MarkdownEditor::make('$1')$0,"
+        ],
+        "description": "Markdown editor input for form builder."
+    },
+    //Markdown Editor
+    //Hidden
+    "Filament Hidden Input": {
+        "prefix": [
+            "hidden",
+            "inputhidden",
+            "hi",
+            "ih"
+        ],
+        "body": [
+            "Hidden::make('$1')${2:",
+            "\t->default($3)}$0,"
+        ],
+        "description": "Hidden input for form builder."
+    },
+    //Hidden
+    //Repeater
+    "Filament Repeater Input": {
+        "prefix": [
+            "repeater",
+            "inputrepeater",
+            "ri",
+            "ir"
+        ],
+        "body": [
+            "Repeater::make('$1')",
+            "\t->schema([",
+            "\t\t$0",
+            "\t]),"
+        ],
+        "description": "Repeater input for form builder."
+    },
+    "Filament Repeater Input with Relationship": {
+        "prefix": [
+            "repeaterrelationship",
+            "inputrepeaterrelationship",
+            "rir",
+            "irr"
+        ],
+        "body": [
+            "Repeater::make('$1')",
+            "\t->relationship(${2:'$3'})$0,"
+        ],
+        "description": "Repeater input with relationship for form builder."
+    },
+    //Repeater
+    //Builder
+    "Filament Builder Input": {
+        "prefix": [
+            "builder",
+            "inputbuilder",
+            "bi",
+            "ib"
+        ],
+        "body": [
+            "Builder::make('$1')",
+            "\t->blocks([",
+            "\t\t$0",
+            "\t]),"
+        ],
+        "description": "Builder input for form builder."
+    },
+    "Filament Builder Block": {
+        "prefix": [
+            "block",
+            "builderblock",
+            "bb"
+        ],
+        "body": [
+            "Block::make('$1')",
+            "\t->schema([",
+            "\t\t$0",
+            "\t]),"
+        ],
+        "description": "Builder input for form builder."
+    },
+    //Builder
+    //Tags Input
+    "Filament Tags Input": {
+        "prefix": [
+            "tags",
+            "tagsinput",
+            "inputtags",
+            "ti",
+            "it"
+        ],
+        "body": [
+            "TagsInput::make('$1')$0,"
+        ],
+        "description": "Tags input for form builder."
+    },
+    //Tags Input
+    //Textarea
+    "Filament Textarea Input": {
+        "prefix": [
+            "textarea",
+            "inputtextarea",
+            "tai",
+            "ita"
+        ],
+        "body": [
+            "Textarea::make('$1')$0,"
+        ],
+        "description": "Textarea input for form builder."
+    },
+    //Textarea
+    //Key-Value
+    "Filament Key-Value Input": {
+        "prefix": [
+            "keyvalue",
+            "inputkeyvalue",
+            "kvi",
+            "ikv"
+        ],
+        "body": [
+            "KeyValue::make('$1')$0,"
+        ],
+        "description": "Key-value input for form builder."
+    },
+    //Key-Value
+    //Color Picker
+    "Filament Color Picker Input": {
+        "prefix": [
+            "colorpicker",
+            "inputcolorpicker",
+            "cpi",
+            "icp"
+        ],
+        "body": [
+            "ColorPicker::make('$1')$0,"
+        ],
+        "description": "Color picker input for form builder."
+    },
+    //Color Picker
+    "Filament View Input": {
+        "prefix": [
+            "view",
+            "viewfield",
+            "inputview",
+            "inputviewfield",
+            "vf",
+            "vi",
+            "iv",
+            "ivf",
+            "vfi"
+        ],
+        "body": [
+            "ViewField::make('$1')",
+            "\t->view('$2')$0,"
+        ],
+        "description": "Color picker input for form builder."
+    }
+    //Color Picker
+    //Form Components
+}
