@@ -1,0 +1,172 @@
+{
+    "Filament Grid Layout": {
+        "prefix": [
+            "grid",
+            "gridlayout",
+            "layoutgrid",
+            "gl",
+            "lg"
+        ],
+        "body": [
+            "Grid::make($1)",
+            "\t->schema(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Grid layout for form builder."
+    },
+    "Filament Grid Layout with Breakpoints": {
+        "prefix": [
+            "gridbreakpoint",
+            "gridlayoutbreakpoint",
+            "layoutgridbreakpoint",
+            "gb",
+            "glb",
+            "lgb"
+        ],
+        "body": [
+            "Grid::make([${3:",
+            "\t'default' => ${4:1},}${5:",
+            "\t'sm' => ${6:2},}${7:",
+            "\t'md' => ${8:3},}${9:",
+            "\t'lg' => ${10:4},}${11:",
+            "\t'xl' => ${12:6},}${13:",
+            "\t'2xl' => ${14:8},}",
+            "])",
+            "\t->schema(${15:[\n\t\t$16\n\t]})$0,"
+        ],
+        "description": "Grid layout with breakpoints for form builder."
+    },
+    "Filament Fieldset Layout": {
+        "prefix": [
+            "fieldset",
+            "fieldsetlayout",
+            "layoutfieldset",
+            "fs",
+            "fsl",
+            "lfs"
+        ],
+        "body": [
+            "Fieldset::make($1)",
+            "\t->schema(${2:[\n\t\t$3\n\t]})${4:",
+            "\t->columns(${5:2})}$0,"
+        ],
+        "description": "Fieldset layout for form builder."
+    },
+    "Filament Card Layout": {
+        "prefix": [
+            "card",
+            "cardlayout",
+            "layoutcard",
+            "cl",
+            "lc"
+        ],
+        "body": [
+            "Card::make($1)",
+            "\t->schema(${2:[\n\t\t$3\n\t]})${4:",
+            "\t->columns(${5:2})}$0,"
+        ],
+        "description": "Fieldset layout for form builder."
+    },
+    "Filament Section Layout": {
+        "prefix": [
+            "section",
+            "sectionlayout",
+            "layoutsection",
+            "sl",
+            "ls"
+        ],
+        "body": [
+            "Section::make('${1:Heading}')${2:",
+            "\t->description('$3')}",
+            "\t->schema(${4:[\n\t\t$5\n\t]})${6:",
+            "\t->columns(${7:2})}$0,"
+        ],
+        "description": "Section layout for form builder."
+    },
+    "Filament Placeholder": {
+        "prefix": [
+            "placeholder",
+            "placeholderlayout",
+            "layoutplaceholder",
+            "phl",
+            "lph"
+        ],
+        "body": [
+            "Placeholder::make('${1:Label}')${2:",
+            "\t->content('$3')}$0,"
+        ],
+        "description": "Placeholder layout for form builder."
+    },
+    "Filament Wizard Layout": {
+        "prefix": [
+            "wizard",
+            "wizardlayout",
+            "layoutwizard",
+            "wl",
+            "lw"
+        ],
+        "body": [
+            "Wizard::make([",
+            "\t$1",
+            "])$0,"
+        ],
+        "description": "Wizard layout for form builder."
+    },
+    "Filament Wizard Step": {
+        "prefix": [
+            "step",
+            "wizardstep",
+            "stepwizard",
+            "ws",
+            "sw"
+        ],
+        "body": [
+            "Wizard\\Step::make('${1:Label}')${2:",
+            "\t->description('$3')}",
+            "\t->schema(${4:[\n\t\t$5\n\t]})$0,"
+        ],
+        "description": "Step for wizard layout for form builder."
+    },
+    "Filament Tabs Layout": {
+        "prefix": [
+            "tabs",
+            "tabslayout",
+            "layouttabs",
+            "tl",
+            "lt"
+        ],
+        "body": [
+            "Tabs::make('${1:Label}')",
+            "\t->schema([",
+            "\t\t$2",
+            "\t])$0,"
+        ],
+        "description": "Tabs layout for form builder."
+    },
+    "Filament Tabs Tab": {
+        "prefix": [
+            "tab",
+            "tabstab",
+            "tabtabs",
+            "tt"
+        ],
+        "body": [
+            "Tabs\\Tab::make('${1:Label}')${2:",
+            "\t->description('$3')}",
+            "\t->schema(${4:[\n\t\t$5\n\t]})$0,"
+        ],
+        "description": "Tab for tabs layout for form builder."
+    },
+    "Filament View Layout": {
+        "prefix": [
+            "view",
+            "viewlayout",
+            "layoutview",
+            "vl",
+            "lv"
+        ],
+        "body": [
+            "View::make('$1')$0,"
+        ],
+        "description": "View layout for form builder."
+    }
+}

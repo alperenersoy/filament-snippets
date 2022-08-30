@@ -1,9 +1,8 @@
 {
-    //Form Components
-    //Text Inputs
     "Filament Text Input": {
         "prefix": [
             "textinput",
+            "inputtext",
             "ti",
             "it"
         ],
@@ -15,6 +14,7 @@
     "Filament Text Input with Mask": {
         "prefix": [
             "textinputmask",
+            "inputtextmask",
             "tim",
             "itm"
         ],
@@ -27,6 +27,7 @@
     "Filament Email Text Input": {
         "prefix": [
             "emailinput",
+            "inputemail",
             "ei",
             "ie"
         ],
@@ -39,6 +40,7 @@
     "Filament Numeric Text Input": {
         "prefix": [
             "numericinput",
+            "inputnumeric",
             "ni",
             "in"
         ],
@@ -51,6 +53,7 @@
     "Filament Password Text Input": {
         "prefix": [
             "passwordinput",
+            "inputpassword",
             "password",
             "pi",
             "ip"
@@ -64,9 +67,10 @@
     "Filament Tel Text Input": {
         "prefix": [
             "telinput",
+            "inputtel",
             "tel",
-            "teli",
-            "itel"
+            "ti",
+            "it"
         ],
         "body": [
             "TextInput::make('${1:tel}')",
@@ -76,6 +80,7 @@
     },
     "Filament URL Text Input": {
         "prefix": [
+            "urlinput",
             "inputurl",
             "url",
             "ui",
@@ -87,8 +92,6 @@
         ],
         "description": "URL input for form builder."
     },
-    //Text Inputs
-    //Select
     "Filament Select Input": {
         "prefix": [
             "select",
@@ -117,7 +120,7 @@
             "Select::make('${1}')",
             "\t->relationship('$2', '$3')$0,"
         ],
-        "description": "Select input with options for form builder."
+        "description": "Select input with relationship for form builder."
     },
     "Filament Select Input with Multiple": {
         "prefix": [
@@ -125,8 +128,9 @@
             "inputmultiselect",
             "selectmultiple",
             "multipleselect",
+            "ms",
             "sm",
-            "ms"
+            "ims"
         ],
         "body": [
             "Select::make('${1}')",
@@ -134,8 +138,6 @@
         ],
         "description": "Multiple select input for form builder."
     },
-    //Select
-    //Checkbox
     "Filament Checkbox Input": {
         "prefix": [
             "checkbox",
@@ -148,8 +150,6 @@
         ],
         "description": "Checkbox input for form builder."
     },
-    //Checkbox
-    //Toggle
     "Filament Toggle Input": {
         "prefix": [
             "toggle",
@@ -162,8 +162,6 @@
         ],
         "description": "Toggle input for form builder."
     },
-    //Toggle
-    //Checkbox List
     "Filament Checkbox List Input": {
         "prefix": [
             "checkboxlist",
@@ -190,8 +188,6 @@
         ],
         "description": "Checkbox list input for form builder."
     },
-    //Checkbox List
-    //Radio
     "Filament Radio Input": {
         "prefix": [
             "radio",
@@ -219,8 +215,6 @@
         ],
         "description": "Radio input with yes and no options for form builder."
     },
-    //Radio
-    //Date Time Pickers
     "Filament Date Time Picker Input": {
         "prefix": [
             "datetimepicker",
@@ -257,8 +251,6 @@
         ],
         "description": "Time Picker input for form builder."
     },
-    //Date Time Pickers
-    //File Uploads
     "Filament File Upload Input": {
         "prefix": [
             "fileupload",
@@ -383,8 +375,6 @@
         ],
         "description": "Avatar upload input with directory definition for form builder."
     },
-    //File Uploads
-    //Rich Editor
     "Filament Rich Editor Input": {
         "prefix": [
             "richeditor",
@@ -397,8 +387,6 @@
         ],
         "description": "Rich text editor input for form builder."
     },
-    //Rich Editor
-    //Markdown Editor
     "Filament Markdown Editor Input": {
         "prefix": [
             "markdowneditor",
@@ -413,8 +401,6 @@
         ],
         "description": "Markdown editor input for form builder."
     },
-    //Markdown Editor
-    //Hidden
     "Filament Hidden Input": {
         "prefix": [
             "hidden",
@@ -428,8 +414,6 @@
         ],
         "description": "Hidden input for form builder."
     },
-    //Hidden
-    //Repeater
     "Filament Repeater Input": {
         "prefix": [
             "repeater",
@@ -458,8 +442,6 @@
         ],
         "description": "Repeater input with relationship for form builder."
     },
-    //Repeater
-    //Builder
     "Filament Builder Input": {
         "prefix": [
             "builder",
@@ -489,8 +471,6 @@
         ],
         "description": "Builder input for form builder."
     },
-    //Builder
-    //Tags Input
     "Filament Tags Input": {
         "prefix": [
             "tags",
@@ -504,8 +484,6 @@
         ],
         "description": "Tags input for form builder."
     },
-    //Tags Input
-    //Textarea
     "Filament Textarea Input": {
         "prefix": [
             "textarea",
@@ -518,8 +496,6 @@
         ],
         "description": "Textarea input for form builder."
     },
-    //Textarea
-    //Key-Value
     "Filament Key-Value Input": {
         "prefix": [
             "keyvalue",
@@ -532,8 +508,6 @@
         ],
         "description": "Key-value input for form builder."
     },
-    //Key-Value
-    //Color Picker
     "Filament Color Picker Input": {
         "prefix": [
             "colorpicker",
@@ -546,7 +520,6 @@
         ],
         "description": "Color picker input for form builder."
     },
-    //Color Picker
     "Filament View Input": {
         "prefix": [
             "view",
@@ -565,6 +538,4 @@
         ],
         "description": "Color picker input for form builder."
     }
-    //Color Picker
-    //Form Components
 }

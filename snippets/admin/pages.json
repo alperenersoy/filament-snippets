@@ -1,0 +1,22 @@
+{
+    "Filament Page Title": {
+        "prefix": [
+            "title",
+            "pagetitle"
+        ],
+        "body": [
+            "protected static ?string \\$title = '$1';"
+        ],
+        "description": "Title for filament admin panel page."
+    },
+    "Filament Page Slug": {
+        "prefix": [
+            "slug",
+            "pageslug"
+        ],
+        "body": [
+            "protected static ?string \\$slug = '$1';"
+        ],
+        "description": "Slug for filament admin panel page."
+    }
+}

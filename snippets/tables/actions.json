@@ -1,0 +1,115 @@
+{
+    "Filament Table Action": {
+        "prefix": [
+            "tableaction",
+            "actiontable",
+            "ta",
+            "at"
+        ],
+        "body": [
+            "Action::make('$1')$0,"
+        ],
+        "description": "Action for table builder."
+    },
+    "Filament Table Action with Url": {
+        "prefix": [
+            "actionurl",
+            "urlaction",
+            "tableactionurl",
+            "actiontableurl",
+            "au",
+            "ua",
+            "tau",
+            "atu"
+        ],
+        "body": [
+            "Action::make('$1')",
+            "\t->url(${2:fn (${3:?Model \\$record}): string => ${4:route('$5', ${6:\\$record})}})$0,"
+        ],
+        "description": "Action with url for table builder."
+    },
+    "Filament Table Action with Url in New Tab": {
+        "prefix": [
+            "actionurlnewtab",
+            "urlactionnewtab",
+            "tableactionurlnewtab",
+            "actiontableurlnewtab",
+            "aunt",
+            "uant",
+            "taunt",
+            "atunt"
+        ],
+        "body": [
+            "Action::make('$1')",
+            "\t->url(${2:fn (${3:?Model \\$record}): string => ${4:route('$5', ${6:\\$record})}})",
+            "\t->openUrlInNewTab()$0,"
+        ],
+        "description": "Action with url in new tab for table builder."
+    },
+    "Filament Table Action with Action and Form": {
+        "prefix": [
+            "actionaction",
+            "tableactionaction",
+            "actiontableaction",
+            "aa",
+            "taa",
+            "ata"
+        ],
+        "body": [
+            "Action::make('$1')",
+            "\t->action(function (${2:?Model} \\$record, ${3:array \\$data}): Builder {",
+            "\t\t$4",
+            "\t})${5:",
+            "\t->form([\n\t\t$6\n\t])}$0,"
+
+        ],
+        "description": "Action with action and/or form for table builder."
+    },
+
+
+    "Filament Table Bulk Action": {
+        "prefix": [
+            "bulkaction",
+            "tablebulkaction",
+            "bulkactiontable",
+            "ba",
+            "tba",
+            "bat"
+        ],
+        "body": [
+            "BulkAction::make('$1')$0,"
+        ],
+        "description": "Bulk action for table builder."
+    },
+    "Filament Table Bulk Action with Action and Form": {
+        "prefix": [
+            "bulkactionaction",
+            "tablebulkactionaction",
+            "actiontablebulkaction",
+            "baa",
+            "tbaa",
+            "atba"
+        ],
+        "body": [
+            "BulkAction::make('$1')",
+            "\t->action(function (${2:Collection} \\$records, ${3:array \\$data}): Builder {",
+            "\t\t$4",
+            "\t})${5:",
+            "\t->form([\n\t\t$6\n\t])}$0,"
+
+        ],
+        "description": "Bulk action with action and/or form for table builder."
+    },
+    "Filament Table Replicate Action": {
+        "prefix": [
+            "replicateaction",
+            "actionreplicate",
+            "ra",
+            "ar"
+        ],
+        "body": [
+            "ReplicateAction::make()$0,"
+        ],
+        "description": "Prebuilt replicate action for table builder."
+    }
+}

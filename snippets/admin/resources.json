@@ -1,0 +1,66 @@
+{
+    "Filament Resource Record Title": {
+        "prefix": [
+            "recordtitle",
+            "recordTitleAttribute"
+        ],
+        "body": [
+            "protected static ?string \\$recordTitleAttribute = '${1:name}';"
+        ],
+        "description": "Record title attribute property for filament admin panel resource."
+    },
+    "Filament Resource Model Label": {
+        "prefix": [
+            "modelLabel"
+        ],
+        "body": [
+            "protected static ?string \\$modelLabel = '$1';"
+        ],
+        "description": "Model label property  for filament admin panel resource."
+    },
+    "Filament Resource Plural Model Label": {
+        "prefix": [
+            "pluralModelLabel"
+        ],
+        "body": [
+            "protected static ?string \\$pluralModelLabel = '$1';"
+        ],
+        "description": "Plural model label property  for filament admin panel resource and page."
+    },
+    "Filament Resource Navigation Label": {
+        "prefix": [
+            "navigationLabel"
+        ],
+        "body": [
+            "protected static ?string \\$navigationLabel = '$1';"
+        ],
+        "description": "Navigation label property  for filament admin panel resource."
+    },
+    "Filament Resource Navigation Icon": {
+        "prefix": [
+            "navigationIcon"
+        ],
+        "body": [
+            "protected static ?string \\$navigationIcon = '${1:heroicon-o-user-group}';"
+        ],
+        "description": "Navigation icon property  for filament admin panel resource."
+    },
+    "Filament Resource Navigation Sort": {
+        "prefix": [
+            "navigationSort"
+        ],
+        "body": [
+            "protected static ?int \\$navigationSort = $1;"
+        ],
+        "description": "Navigation sort property for filament admin panel resource."
+    },
+    "Filament Resource Navigation Group": {
+        "prefix": [
+            "navigationGroup"
+        ],
+        "body": [
+            "protected static ?string \\$navigationGroup = '$1';"
+        ],
+        "description": "Navigation group property for filament admin panel resource."
+    }
+}

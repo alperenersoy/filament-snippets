@@ -1,0 +1,83 @@
+{
+    "Filament Notification": {
+        "prefix": [
+            "notification"
+        ],
+        "body": [
+            "Notification::make()",
+            "\t->title('$1')${2:",
+            "\t->body('$3')}${4:",
+            "\t->success()}${5:",
+            "\t->icon('$6')}${7:",
+            "\t->iconColor('$8')}${9:",
+            "\t->duration(${10:5000})}${11:",
+            "\t->persistent()}${12:",
+            "\t->actions([\n\t\t$13\n\t])}",
+            "\t->send();"
+        ],
+        "description": "Create a filament notification."
+    },
+    "Filament Basic Notification": {
+        "prefix": [
+            "notificationbasic",
+            "basicnotification",
+            "nb",
+            "bn"
+        ],
+        "body": [
+            "Notification::make()",
+            "\t->title('$1')${2:",
+            "\t->body('$3')}",
+            "\t->send();"
+        ],
+        "description": "Create a basic filament notification."
+    },
+    "Filament Success Notification": {
+        "prefix": [
+            "notificationsuccess",
+            "successnotification",
+            "ns",
+            "sn"
+        ],
+        "body": [
+            "Notification::make()",
+            "\t->title('$1')${2:",
+            "\t->body('$3')}",
+            "\t->success()",
+            "\t->send();"
+        ],
+        "description": "Create a basic filament success notification."
+    },
+    "Filament Danger Notification": {
+        "prefix": [
+            "notificationdanger",
+            "dangernotification",
+            "nd",
+            "dn"
+        ],
+        "body": [
+            "Notification::make()",
+            "\t->title('$1')${2:",
+            "\t->body('$3')}",
+            "\t->danger()",
+            "\t->send();"
+        ],
+        "description": "Create a basic filament danger notification."
+    },
+    "Filament Warning Notification": {
+        "prefix": [
+            "notificationwarning",
+            "warningnotification",
+            "nw",
+            "wn"
+        ],
+        "body": [
+            "Notification::make()",
+            "\t->title('$1')${2:",
+            "\t->body('$3')}",
+            "\t->warning()",
+            "\t->send();"
+        ],
+        "description": "Create a basic filament warning notification."
+    }
+}

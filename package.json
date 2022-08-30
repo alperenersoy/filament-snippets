@@ -19,7 +19,43 @@
         "snippets": [
             {
                 "language": "php",
-                "path": "./snippets/form-builder.json"
+                "path": "./snippets/admin/pages.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/admin/resources.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/admin/widgets.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/forms/closures.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/forms/inputs.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/forms/layouts.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/tables/actions.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/tables/columns.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/tables/filters.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/notifications.json"
             }
         ]
     }

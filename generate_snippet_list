@@ -1,0 +1,98 @@
+<?php
+
+function add_directory_to_snippets(string $directoryPath, array &$snippets, bool $withFolderName = true)
+{
+    $files = glob($directoryPath . '/*.json');
+
+    sort($files);
+
+    foreach ($files as $file) {
+        $content = file_get_contents($file);
+
+        $newSnippets = array_map(fn ($newSnippet) => [
+            'folder' => $withFolderName ? ucfirst(basename($directoryPath)) : null,
+            'file' => ucfirst(basename($file, ".json")),
+            ...$newSnippet
+        ], json_decode($content, flags: JSON_OBJECT_AS_ARRAY));
+
+        $snippets = array_merge(
+            $snippets,
+            $newSnippets
+        );
+    }
+}
+
+function group_by(array $array, string $column)
+{
+    $result = [];
+
+    foreach ($array as $key => $value) {
+        $result[$value[$column]][$key] = $value;
+    }
+
+    return $result;
+}
+
+$snippets = [];
+
+$snippetsPath = './snippets';
+
+$directories = glob($snippetsPath . '/*', GLOB_ONLYDIR);
+
+foreach ($directories as $directory) {
+    add_directory_to_snippets($directory, $snippets);
+}
+
+add_directory_to_snippets($snippetsPath, $snippets, false);
+
+$snippetRows = array_map(function ($label, $snippet) {
+    return [
+        'label' => $label,
+        'prefixes' => implode(", ", $snippet["prefix"]),
+        'description' => $snippet["description"],
+        'file' => $snippet["file"],
+        'folder' => $snippet["folder"],
+    ];
+}, array_keys($snippets), $snippets);
+
+$snippetGroups = group_by($snippetRows, 'folder');
+
+$table = "";
+
+foreach ($snippetGroups as $groupName => $snippetGroup) {
+    if ($groupName) {
+        $table .= "# $groupName" . PHP_EOL . PHP_EOL;
+    }
+
+    $snippetRowGroups = group_by($snippetGroup, 'file');
+
+    foreach ($snippetRowGroups as $fileName => $snippetRowGroup) {
+        if ($groupName) {
+            $table .= "## $fileName" . PHP_EOL . PHP_EOL;
+        }
+        else {
+            $table .= "# $fileName" . PHP_EOL . PHP_EOL;
+        }
+
+        $table .= "|Label|Prefixes|Description|" . PHP_EOL;
+
+        $table .= "|-----------|-----------|-----------|" . PHP_EOL;
+
+        foreach ($snippetRowGroup as $snippetRow) {
+            $label = $snippetRow['label'];
+            $prefixes = $snippetRow['prefixes'];
+            $description = $snippetRow['description'];
+            $table .= "|$label|$prefixes|$description|" . PHP_EOL;
+        }
+
+        $table .= PHP_EOL;
+    }
+}
+
+$file = fopen('./SNIPPET-LIST.md', 'w');
+
+fwrite($file, $table);
+
+fclose($file);
+
+echo "Believe me it's done!";

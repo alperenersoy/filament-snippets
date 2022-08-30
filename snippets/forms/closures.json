@@ -1,0 +1,185 @@
+{
+    "Filament Form Builder Closure": {
+        "prefix": [
+            "closure",
+            "formclosure",
+            "closureform",
+            "fc",
+            "cf"
+        ],
+        "body": [
+            "function (${1:${2:\\$state, }${3:Closure \\$get, }${4:Closure \\$set, }${5:Component \\$component, }${6:Livewire \\$livewire, }${7:?Model \\$record }}) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament form builder closure with dependency injection."
+    },
+    "Filament Form Builder Short Closure": {
+        "prefix": [
+            "shortclosure",
+            "formclosureshort",
+            "shortclosureform",
+            "sc",
+            "fcs",
+            "scf"
+        ],
+        "body": [
+            "fn (${1:${2:\\$state, }${3:Closure \\$get, }${4:Closure \\$set, }${5:Component \\$component, }${6:Livewire \\$livewire, }${7:?Model \\$record }}) => $0"
+        ],
+        "description": "Filament form builder short closure with dependency injection."
+    },
+    "Filament Closure with $state": {
+        "prefix": [
+            "closurestate",
+            "stateclosure",
+            "cs",
+            "sc"
+        ],
+        "body": [
+            "function (\\$state) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $state dependency injection."
+    },
+    "Filament Short Closure with $state": {
+        "prefix": [
+            "shortclosurestate",
+            "stateclosureshort",
+            "scs"
+        ],
+        "body": [
+            "fn (\\$state) => $0"
+        ],
+        "description": "Filament short closure with $state dependency injection."
+    },
+    "Filament Closure with $get": {
+        "prefix": [
+            "closureget",
+            "getclosure",
+            "cg",
+            "gc"
+        ],
+        "body": [
+            "function (Closure \\$get) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $get dependency injection."
+    },
+    "Filament Short Closure with $get": {
+        "prefix": [
+            "shortclosureget",
+            "getclosureshort",
+            "scg",
+            "gcs"
+        ],
+        "body": [
+            "fn (Closure \\$get) => $0"
+        ],
+        "description": "Filament short closure with $get dependency injection."
+    },
+    "Filament Closure with $set": {
+        "prefix": [
+            "closureset",
+            "setclosure",
+            "cs",
+            "sc"
+        ],
+        "body": [
+            "function (Closure \\$set) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $set dependency injection."
+    },
+    "Filament Short Closure with $set": {
+        "prefix": [
+            "shortclosureset",
+            "setclosureshort",
+            "scs"
+        ],
+        "body": [
+            "fn (Closure \\$set) => $0"
+        ],
+        "description": "Filament short closure with $set dependency injection."
+    },
+    "Filament Closure with $component": {
+        "prefix": [
+            "closurecomponent",
+            "componentclosure",
+            "cc"
+        ],
+        "body": [
+            "function (Component \\$component) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $component dependency injection."
+    },
+    "Filament Short Closure with $component": {
+        "prefix": [
+            "shortclosurecomponent",
+            "componentclosureshort",
+            "scs",
+            "ccs"
+        ],
+        "body": [
+            "fn (Component \\$component) => $0"
+        ],
+        "description": "Filament short closure with $component dependency injection."
+    },
+    "Filament Closure with $livewire": {
+        "prefix": [
+            "closurelivewire",
+            "livewireclosure",
+            "cl",
+            "lc"
+        ],
+        "body": [
+            "function (Livewire \\$livewire) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $livewire dependency injection."
+    },
+    "Filament Short Closure with $livewire": {
+        "prefix": [
+            "shortclosurelivewire",
+            "livewireclosureshort",
+            "scl",
+            "lcs"
+        ],
+        "body": [
+            "fn (Livewire \\$livewire) => $0"
+        ],
+        "description": "Filament short closure with $livewire dependency injection."
+    },
+    "Filament Closure with $record": {
+        "prefix": [
+            "closurerecord",
+            "recordclosure",
+            "cr",
+            "rc"
+        ],
+        "body": [
+            "function (?Model \\$record) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Filament closure with $record dependency injection."
+    },
+    "Filament Short Closure with $record": {
+        "prefix": [
+            "shortclosurerecord",
+            "recordclosureshort",
+            "scr",
+            "rcs"
+        ],
+        "body": [
+            "fn (?Model \\$record) => $0"
+        ],
+        "description": "Filament short closure with $record dependency injection."
+    }
+
+}

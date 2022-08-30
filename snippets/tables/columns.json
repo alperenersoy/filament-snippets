@@ -1,0 +1,198 @@
+{
+    "Filament Text Column": {
+        "prefix": [
+            "textcolumn",
+            "columntext",
+            "tc",
+            "ct"
+        ],
+        "body": [
+            "TextColumn::make('$1')$0,"
+        ],
+        "description": "Text column for table builder."
+    },
+    "Filament Date Time Text Column": {
+        "prefix": [
+            "datetimecolumn",
+            "columndatetime",
+            "dtc",
+            "cdt"
+        ],
+        "body": [
+            "TextColumn::make('$1')",
+            "\t->dateTime()$0,"
+        ],
+        "description": "Date time text column for table builder."
+    },
+    "Filament HTML Text Column": {
+        "prefix": [
+            "htmlcolumn",
+            "columnhtml",
+            "hc",
+            "ch"
+        ],
+        "body": [
+            "TextColumn::make('$1')",
+            "\t->html()$0,"
+        ],
+        "description": "HTML text column for table builder."
+    },
+    "Filament Text Column with Since Option": {
+        "prefix": [
+            "sincecolumn",
+            "columnsince",
+            "sc",
+            "cs"
+        ],
+        "body": [
+            "TextColumn::make('$1')",
+            "\t->since()$0,"
+        ],
+        "description": "Text column with since option for table builder."
+    },
+    "Filament Text Column with Money Option": {
+        "prefix": [
+            "moneycolumn",
+            "columnmoney",
+            "mc",
+            "cm"
+        ],
+        "body": [
+            "TextColumn::make('$1')",
+            "\t->money('$2')$0,"
+        ],
+        "description": "Text column with money option for table builder."
+    },
+    "Filament Text Column Enum": {
+        "prefix": [
+            "enumtextcolumn",
+            "columnenumtext",
+            "etc",
+            "cet"
+        ],
+        "body": [
+            "TextColumn::make('$1')",
+            "\t->enum(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Enum text column for table builder."
+    },
+    "Filament Boolean Column": {
+        "prefix": [
+            "booleancolumn",
+            "columnboolean",
+            "boolcolumn",
+            "columnbool",
+            "bc",
+            "cb"
+        ],
+        "body": [
+            "BooleanColumn::make('$1')$0,"
+        ],
+        "description": "Text column for table builder."
+    },
+    "Filament Image Column": {
+        "prefix": [
+            "imagecolumn",
+            "columnimage",
+            "ic",
+            "ci"
+        ],
+        "body": [
+            "ImageColumn::make('$1')$0,"
+        ],
+        "description": "Image column for table builder."
+    },
+    "Filament Icon Column": {
+        "prefix": [
+            "iconcolumn",
+            "columnicon",
+            "ic",
+            "ci"
+        ],
+        "body": [
+            "IconColumn::make('$1')",
+            "\t->options(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Icon column for table builder."
+    },
+    "Filament Icon Column with Colors": {
+        "prefix": [
+            "iconcolumncolors",
+            "columniconcolors",
+            "icc",
+            "cic"
+        ],
+        "body": [
+            "IconColumn::make('$1')",
+            "\t->options(${2:[\n\t\t$3\n\t]})",
+            "\t->colors(${4:[\n\t\t$5\n\t]})$0,"
+        ],
+        "description": "Icon column with colors for table builder."
+    },
+    "Filament Badge Column": {
+        "prefix": [
+            "badgecolumn",
+            "columnbadge",
+            "bc",
+            "cb"
+        ],
+        "body": [
+            "BadgeColumn::make('$1')",
+            "\t->enum(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Badge column for table builder."
+    },
+    "Filament Badge Column with Colors": {
+        "prefix": [
+            "badgecolumncolors",
+            "columnbadgecolors",
+            "bcc",
+            "cbc"
+        ],
+        "body": [
+            "BadgeColumn::make('$1')",
+            "\t->enum(${2:[\n\t\t$3\n\t]})",
+            "\t->colors(${4:[\n\t\t$5\n\t]})$0,"
+
+        ],
+        "description": "Badge column with colors for table builder."
+    },
+    "Filament Tags Column": {
+        "prefix": [
+            "tagscolumn",
+            "columntags",
+            "tc",
+            "ct"
+        ],
+        "body": [
+            "TagsColumn::make('$1')$0,"
+        ],
+        "description": "Tags column for table builder."
+    },
+    "Filament Tags Column with Seperator": {
+        "prefix": [
+            "tagscolumnseperator",
+            "columntagsseperator",
+            "tcs",
+            "cts"
+        ],
+        "body": [
+            "TagsColumn::make('$1')",
+            "\t->seperator('${2:,}')$0,"
+        ],
+        "description": "Tags column with sepeator for table builder."
+    },
+    "Filament View Column": {
+        "prefix": [
+            "viewcolumn",
+            "columnview",
+            "vc",
+            "cv"
+        ],
+        "body": [
+            "ViewColumn::make('$1')",
+            "\t->view('$2')$0,"
+        ],
+        "description": "View column for table builder."
+    }
+}

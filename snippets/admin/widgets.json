@@ -1,0 +1,46 @@
+{
+    "Filament Widget Sort": {
+        "prefix": [
+            "sort",
+            "widgetsort"
+        ],
+        "body": [
+            "protected static ?int \\$sort = $1;"
+        ],
+        "description": "Sort property for filament admin panel widget."
+    },
+    "Filament Widget Column Span": {
+        "prefix": [
+            "columnspan",
+            "widgetcolumnspan"
+        ],
+        "body": [
+            "protected int | string | array \\$columnSpan = ${1:'full'};"
+        ],
+        "description": "Column span property for filament admin panel widget."
+    },
+    "Filament Widget Polling Interval": {
+        "prefix": [
+            "polling",
+            "pollingInterval"
+        ],
+        "body": [
+            "protected static ?string \\$pollingInterval = ${1:'${2:10s}'};"
+        ],
+        "description": "Polling interval property for filament admin panel widget."
+    },
+    "Filament Widget Card": {
+        "prefix": [
+            "card",
+            "widgetcard"
+        ],
+        "body": [
+            "Card::make(${1:'${2:Unique views}'}, ${3:'${4:192.1k}'})${5:",
+            "\t->description('$6')}${7:",
+            "\t->descriptionIcon('$8')}${9:",
+            "\t->chart([$10])}${11:",
+            "\t->color('${12:success}')},"
+        ],
+        "description": "Card for filament admin panel stats overview widget."
+    }
+}

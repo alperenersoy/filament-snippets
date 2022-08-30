@@ -1,0 +1,104 @@
+{
+    "Filament Filter": {
+        "prefix": [
+            "filter"
+        ],
+        "body": [
+            "Filter::make('$1')$0,"
+        ],
+        "description": "Filter for table builder."
+    },
+    "Filament Filter with Query": {
+        "prefix": [
+            "filterquery",
+            "queryfilter",
+            "fq",
+            "qf"
+        ],
+        "body": [
+            "Filter::make('$1')",
+            "\t->query(fn (Builder \\$query): Builder => \\$query${2:->}$3)$0,"
+        ],
+        "description": "Filter with query for table builder."
+    },
+    "Filament Select Filter": {
+        "prefix": [
+            "selectfilter",
+            "filterselect",
+            "sf",
+            "fs"
+        ],
+        "body": [
+            "SelectFilter::make('${1}')",
+            "\t->options(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Select filter for table builder."
+    },
+    "Filament Select Filter with Relationship": {
+        "prefix": [
+            "selectfilterrelationship",
+            "filterselectrelationship",
+            "sfr",
+            "fsr"
+        ],
+        "body": [
+            "SelectFilter::make('${1}')",
+            "\t->relationship('$2', '$3')$0,"
+        ],
+        "description": "Select filter with relationship for table builder."
+    },
+    "Filament Multi Select Filter": {
+        "prefix": [
+            "multiselectfilter",
+            "filtermultiselect",
+            "msf",
+            "fms"
+        ],
+        "body": [
+            "MultiSelectFilter::make('${1}')",
+            "\t->options(${2:[\n\t\t$3\n\t]})$0,"
+        ],
+        "description": "Multi select filter for table builder."
+    },
+    "Filament Multi Select Filter with Relationship": {
+        "prefix": [
+            "multiselectfilterrelationship",
+            "filtermultiselectrelationship",
+            "msfr",
+            "fmsr"
+        ],
+        "body": [
+            "MultiSelectFilter::make('${1}')",
+            "\t->relationship('$2', '$3')$0,"
+        ],
+        "description": "Multi select filter with relationship for table builder."
+    },
+    "Filament Ternary Filter": {
+        "prefix": [
+            "ternaryfilter",
+            "filterternary",
+            "tf",
+            "ft"
+        ],
+        "body": [
+            "TernaryFilter::make('$1')$0,"
+        ],
+        "description": "Ternary filter for table builder."
+    },
+    "Filament Filter with Custom Form": {
+        "prefix": [
+            "formfilter",
+            "filterform",
+            "ff",
+            "ff"
+        ],
+        "body": [
+            "Filter::make('$1')",
+            "\t->form(${2:[\n\t\t$3\n\t]})",
+            "\t->query(function (Builder \\$query, array \\$data): Builder {",
+            "\t\t\\$query${4:->}",
+            "\t})$0"
+        ],
+        "description": "Filter with custom form for table builder."
+    }
+}
