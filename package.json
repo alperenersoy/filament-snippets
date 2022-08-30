@@ -1,9 +1,9 @@
 {
     "name": "filament-snippets",
     "displayName": "Filament Snippets",
-    "description": "Snippets for filament admin panel.",
-    "version": "0.0.1",
-    "publisher": "alperenersoy",
+    "description": "Snippets for filament admin panel, form builder, table builder and notifications.",
+    "version": "0.1.1",
+    "publisher": "AlperenErsoy",
     "repository": {
         "type": "git",
         "url": "https://github.com/alperenersoy/filament-snippets"
