@@ -14,7 +14,7 @@ You can also use only capital letters of the snippet for short (e.g. ct instead 
 
 ## Content
 
-[See full snippet list](./SNIPPET-LIST.MD)
+[See full snippet list](./SNIPPET-LIST.md)
 
 ### Admin Panel
 
