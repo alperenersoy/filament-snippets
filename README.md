@@ -33,6 +33,7 @@ You can also use only capital letters of the snippet for short (e.g. ct instead 
 - Actions
 - Columns
 - Filters
+- Layouts
 
 ### Notifications
 

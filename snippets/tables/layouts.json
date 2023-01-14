@@ -1,0 +1,24 @@
+{
+  "Filament Split Layout": {
+    "prefix": [
+        "split",
+        "splitlayout",
+        "layoutsplit"
+    ],
+    "body": [
+        "Split::make(['$1'])$0,"
+    ],
+    "description": "Split layout for table builder."
+  },
+  "Filament Stack Layout": {
+    "prefix": [
+        "stack",
+        "stacklayout",
+        "layoutstack"
+    ],
+    "body": [
+        "Stack::make(['$1'])$0,"
+    ],
+    "description": "Stack layout for table builder."
+  }
+}
