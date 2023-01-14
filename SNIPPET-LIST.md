@@ -161,6 +161,8 @@
 |Label|Prefixes|Description|
 |-----------|-----------|-----------|
 |Filament Split Layout|split, splitlayout, layoutsplit|Split layout for table builder.|
+|Filament Stack Layout|stack, stacklayout, layoutstack|Stack layout for table builder.|
+|Filament Panel Layout|panel, panellayout, layoutpanel|Panel layout for form builder.|
 
 # Notifications
 

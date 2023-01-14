@@ -1,24 +1,36 @@
 {
   "Filament Split Layout": {
     "prefix": [
-        "split",
-        "splitlayout",
-        "layoutsplit"
+      "split",
+      "splitlayout",
+      "layoutsplit"
     ],
     "body": [
-        "Split::make(['$1'])$0,"
+      "Split::make([$1])$0,"
     ],
     "description": "Split layout for table builder."
   },
   "Filament Stack Layout": {
     "prefix": [
-        "stack",
-        "stacklayout",
-        "layoutstack"
+      "stack",
+      "stacklayout",
+      "layoutstack"
     ],
     "body": [
-        "Stack::make(['$1'])$0,"
+      "Stack::make([$1])$0,"
     ],
     "description": "Stack layout for table builder."
+  },
+  "Filament Panel Layout": {
+    "prefix": [
+      "panel",
+      "panellayout",
+      "layoutpanel"
+    ],
+    "body": [
+      "Panel::make([$1])${2:",
+      "\t->collapsible(}$0,"
+    ],
+    "description": "Panel layout for form builder."
   }
 }
