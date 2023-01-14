@@ -156,6 +156,14 @@
 |Filament Ternary Filter|ternaryfilter, filterternary, tf, ft|Ternary filter for table builder.|
 |Filament Filter with Custom Form|formfilter, filterform, ff, ff|Filter with custom form for table builder.|
 
+## Layouts
+
+|Label|Prefixes|Description|
+|-----------|-----------|-----------|
+|Filament Split Layout|split, splitlayout, layoutsplit|Split layout for table builder.|
+|Filament Stack Layout|stack, stacklayout, layoutstack|Stack layout for table builder.|
+|Filament Panel Layout|panel, panellayout, layoutpanel|Panel layout for form builder.|
+
 # Notifications
 
 |Label|Prefixes|Description|
