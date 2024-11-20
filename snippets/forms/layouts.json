@@ -151,7 +151,6 @@
         ],
         "body": [
             "Tabs\\Tab::make('${1:Label}')${2:",
-            "\t->description('$3')}",
             "\t->schema(${4:[\n\t\t$5\n\t]})$0,"
         ],
         "description": "Tab for tabs layout for form builder."
